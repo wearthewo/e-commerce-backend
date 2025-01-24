@@ -1,4 +1,4 @@
-import { redis } from "../../mongo_db/redis.js";
+import { redis } from "../mongo_db/redis.js";
 import Product from "../models/product.model.js";
 import cloudinary from "../mongo_db/cloud.js";
 

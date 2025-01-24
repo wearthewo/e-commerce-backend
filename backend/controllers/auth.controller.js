@@ -1,6 +1,6 @@
 import User from "../models/user.model.js";
 import jwt from "jsonwebtoken";
-import { redis } from "../../mongo_db/redis.js";
+import { redis } from "../mongo_db/redis.js";
 
 const generateTokens = (userId) => {
   const accessToken = jwt.sign({ userId }, process.env.ACCESS_TOKEN_KEY, {
